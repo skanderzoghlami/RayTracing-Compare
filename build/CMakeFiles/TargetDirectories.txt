@@ -1,0 +1,3 @@
+C:/Users/skander/OneDrive/Bureau/OpenGL with python/RayTracer/build/CMakeFiles/raytrace-compare.dir
+C:/Users/skander/OneDrive/Bureau/OpenGL with python/RayTracer/build/CMakeFiles/edit_cache.dir
+C:/Users/skander/OneDrive/Bureau/OpenGL with python/RayTracer/build/CMakeFiles/rebuild_cache.dir

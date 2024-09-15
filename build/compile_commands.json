@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/RayTracer/build",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -g -o CMakeFiles\\raytrace-compare.dir\\main.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\RayTracer\\main.cpp\"",
+  "file": "C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\RayTracer\\main.cpp",
+  "output": "CMakeFiles\\raytrace-compare.dir\\main.cpp.obj"
+}
+]
