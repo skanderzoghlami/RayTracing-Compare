@@ -1,27 +1,26 @@
+#include "color.h"
+#include "vec3.h"
+
 #include <iostream>
 
-void CreateImage(int imageHeight, int imageWidth)
-{
-    std::cout << "P3\n"
-              << imageWidth << ' ' << imageHeight << "\n255\n";
-    for (int j = 0; j < imageHeight; j++)
-    {
-        for (int i = 0; i < imageWidth; i++)
-        {
-            auto r = double(i) / (imageWidth - 1);
-            auto g = double(j) / (imageHeight - 1);
-            auto b = 0.0;
+int main() {
 
-            int ir = int(255.999 * r);
-            int ig = int(255.999 * g);
-            int ib = int(255.999 * b);
+    // Image
 
-            std::cout << ir << ' ' << ig << ' ' << ib << '\n';
+    int image_width = 256;
+    int image_height = 256;
+
+    // Render
+
+    std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
+
+    for (int j = 0; j < image_height; j++) {
+        std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
+        for (int i = 0; i < image_width; i++) {
+            auto pixel_color = color(double(i)/(image_width-1), double(j)/(image_height-1), 0);
+            write_color(std::cout, pixel_color);
         }
     }
-}
 
-int main(int, char **)
-{
-    CreateImage(200, 200);
+    std::clog << "\rDone.                 \n";
 }
